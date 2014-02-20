@@ -1,0 +1,19 @@
+public void Kombinace(string text,char[] zbylapismena)
+	{
+		for(int i = 0;i< zbylapismena.lenght;i++)
+		{
+			if(JeTenhleStringSlovo(text+zbylapismena[i])) Console.Write(text+zbylapismena[i]); //vyzkoušení jestli tenhle string je nejaky slovo
+			Kombinace(text+zbylapismena[i],VratPoleBezIndexu(zbylapismena,i)); //rekurzivní volání
+		}
+	}
+    
+	//zkouší jestli je to nejaké slovo<br>
+	public boolean JeTehleStringSlovo(string text)<br>
+	{
+	}
+
+	//vrátí pole bez daného indexu<br>
+	public char[] VratPoleBezIndexu(char[] pole,int index)<br>
+	{
+		return pole;
+	}
